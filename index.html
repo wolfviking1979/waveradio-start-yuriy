@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W-Wave Radio</title>
-    <link rel="stylesheet" href="./css/font.css">
-</head>
-<body>
-    
-</body>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <div class="header__wrapper">
+            <a class="header__logo">
+              <img src="./img/header-logo.svg" alt="Логотип Wave Radio" />
+            </a>
+            <nav class="header__nav">
+              <ul class="list-reset header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link">Подкасты</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Передачи</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Гости</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Плейлисты</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">О&nbsp;нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <button class="btn-reset header__search">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 21L16.65 16.65"
+                stroke="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__nav">
+            <ul class="list-reset header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Подкасты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Передачи</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Гости</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Плейлисты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">О&nbsp;нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero__container hero__image">
+          <div class="hero__content">
+            <h1 class="hero__title visually-hidden">Радио W-Wave</h1>
+            <img
+              src="./img/hero-title.svg"
+              class="hero__logo"
+              aria-hidden="true"
+            />
+            <p class="hero__descr">
+              Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием,
+              а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим
+              о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь,
+              помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое
+              другое:)
+            </p>
+            <button class="btn-reset hero__btn">Слушать эфир</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

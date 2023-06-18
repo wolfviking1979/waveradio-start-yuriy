@@ -1,15 +1,224 @@
-:root{
-    --color-white: #ffffff;
-    --color-primary: #6D31EE;
-    --color-primary_shade: #4F28A5;
-    --color-primary_light: #AA9DFA;
-    --color-light_color: #E6E8EC;
-    --color-text_gray: #A1A6B4;
-    --color-shade_gray: #D2D5DD;
-    --color-light_color_40: rgba(230, 232, 236, 0.4);
-    --color-black: #121723;
-    --color-light_black: #292E39;
-    --color-red: #FF6F6F;
-    --color-promo_color: #F0D288;
-    --color-promo_color_shade: #BB973E;
+:root {
+  --color-white: #ffffff;
+  --color-primary: #6d31ee;
+  --color-primary_shade: #4f28a5;
+  --color-primary_light: #aa9dfa;
+  --color-light_color: #e6e8ec;
+  --color-text_gray: #a1a6b4;
+  --color-shade_gray: #d2d5dd;
+  --color-light_color_40: rgba(230, 232, 236, 0.4);
+  --color-black: #121723;
+  --color-light_black: #292e39;
+  --color-red: #ff6f6f;
+  --color-promo_color: #f0d288;
+  --color-promo_color_shade: #bb973e;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  font-family: "Muller", "sans-serif";
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+/* header */
+
+.header {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bottom {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 59px;
+}
+
+.header__link {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__link:focus {
+  outline: none;
+  color: var(--color-white);
+}
+
+.header__link:focus::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: 0px;
+  left: -3px;
+  background-color: var(--color-primary_light);
+  z-index: -1;
+}
+
+.header__link:hover::before {
+  background-color: transparent;
+}
+
+.header__link:hover {
+  color: var(--color-primary);
+}
+
+.header__link:active {
+  color: var(--color-primary_shade);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 81px;
+}
+
+.header__search {
+  outline: none;
+}
+
+.header__search path {
+  stroke: var(--color-primary);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.header__search:focus path,
+.header__search:hover path {
+  stroke: var(--color-primary_light);
+}
+
+.header__search:active path {
+  stroke: var(--color-primary_shade);
+}
+
+/* hero */
+
+.hero__image {
+  background-image: url("../img/hero-microphone.png");
+  background-size: 31%;
+  background-position: 98% 25px;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
+.hero__logo {
+  margin-bottom: 13px;
+  padding-left: 5px;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 47px;
+  width: 635px;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-black);
+}
+
+.hero__btn {
+  padding: 22px 52px;
+  background-color: var(--color-primary);
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid transparent;
+  color: var(--color-white);
+  outline: none;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hero__btn:focus {
+  background: var(--color-primary_light);
+  border-color: var(--color-primary_shade);
+}
+
+.hero__btn:hover {
+  background-color: var(--color-primary_light);
+  border-color: transparent;
+}
+
+.hero__btn:active {
+  background-color: var(--color-primary_shade);
 }
